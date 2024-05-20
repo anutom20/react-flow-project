@@ -1,0 +1,102 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.main-div {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  height: 7%;
+  display: flex;
+  background-color: rgb(231, 229, 229);
+  justify-content: end;
+}
+
+.save-button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: blue;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 2px solid blue;
+  cursor: pointer;
+  margin: 2px 40px 2px 0px;
+}
+
+.chat-flow-container {
+  height: 95%;
+  display: flex;
+  flex-direction: row;
+}
+
+.react-flow-canvas {
+  flex: 0 0 75%;
+}
+
+.node-panel-container {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
+  row-gap: 16px;
+  column-gap: 8px;
+  padding: 8px;
+}
+
+.message-node-draggable-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 120px;
+  height: 60px;
+  color: blue;
+  border: 2px solid blue;
+}
+
+.node-panel-parent-container {
+  flex: 0 0 25%;
+  border: 2px solid lightgray;
+}
+
+.save-result-container {
+  padding: 4px 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  width: 10%;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+}
+
+.save-container-text {
+  font-weight: bolder;
+  color: #333;
+}
+
+.save-error {
+  background-color: rgb(255, 146, 146);
+}
+
+.save-success {
+  background-color: rgb(142, 239, 145);
+}

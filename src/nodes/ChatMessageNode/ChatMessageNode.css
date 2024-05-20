@@ -1,0 +1,43 @@
+.send-message-container {
+  width: fit-content;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.send-message-header {
+  background-color: #d8f9e9;
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  padding: 4px 12px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.send-message-body {
+  padding: 12px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.send-message-text {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+}
+
+.selected {
+  border: 1px solid blue !important;
+  border-radius: 8px;
+}
