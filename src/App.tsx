@@ -103,10 +103,10 @@ export default function App() {
 
   /**
    * we are setting the node id of the selected node on clicking it
-   * @param event
+   * @param _event
    * @param node
    */
-  const onNodeClick = (event: any, node: any) => {
+  const onNodeClick = (_event: any, node: any) => {
     setSelectedNodeId(node.id);
     setNodesPanelOpen(false);
     setSettingsPanelMessageText(node.data.label);
